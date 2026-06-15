@@ -1,0 +1,12 @@
+{
+  "name": "definite-onprem",
+  "description": "Query data, build data apps, and run automations on a self-hosted Definite deployment via its MCP server. Adds the `definite-onprem` skill, which loads automatically on data, analytics, data app, and pipeline requests.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Definite",
+    "url": "https://www.definite.app"
+  },
+  "homepage": "https://docs.definite.app/mcp/agent-reference",
+  "repository": "https://github.com/definite-app/definite-onprem-skills",
+  "license": "MIT"
+}

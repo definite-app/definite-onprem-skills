@@ -1,0 +1,22 @@
+{
+  "name": "definite-onprem",
+  "owner": {
+    "name": "Definite",
+    "email": "mike@definite.app",
+    "url": "https://www.definite.app"
+  },
+  "metadata": {
+    "description": "Skills for using a self-hosted (on-prem) Definite deployment from Claude Code and other AI agents.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "definite-onprem",
+      "source": "./plugins/definite-onprem",
+      "description": "Query data, build data apps, and run automations on a self-hosted Definite deployment via its MCP server.",
+      "version": "0.1.0",
+      "category": "data",
+      "keywords": ["definite", "on-prem", "onprem", "self-hosted", "analytics", "sql", "duckdb", "dashboard", "data app", "ontology", "semantic", "mcp"]
+    }
+  ]
+}
