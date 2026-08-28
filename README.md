@@ -55,6 +55,11 @@ reconnect the connector to sign in again.
 Mint a session token from your Definite login and pass it directly:
 
 ```bash
+definite login https://your-deployment
+jq -r '.token' ~/.definite/credentials.json
+```
+
+```bash
 claude mcp add definite --transport http \
   https://your-deployment/mcp \
   --header "Authorization: Bearer <session-token>"
@@ -75,6 +80,12 @@ For Claude Desktop's config file, the `mcp-remote` bridge does the same:
   }
 }
 ```
+
+Session tokens expire after 14 days. For long-lived access, or on SSO-only
+deployments (where there is no password login to mint a session from), create a
+`def_` API token in the Definite app instead and use it as the bearer token.
+API tokens can be scoped; an unscoped token can use every tool, and the skill
+documents which scopes each tool group needs.
 
 ## License
 
